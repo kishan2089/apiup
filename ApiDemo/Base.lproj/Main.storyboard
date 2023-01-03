@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ApiDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="e40-bi-b2R">
+                                <rect key="frame" x="0.0" y="109" width="414" height="787"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EHi-XM-gxe">
+                                <rect key="frame" x="0.0" y="44" width="414" height="65"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e1R-sA-vyl">
+                                        <rect key="frame" x="334" y="7.5" width="50" height="50"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="7Nk-ZM-Qm5"/>
+                                            <constraint firstAttribute="height" constant="50" id="Thp-rF-I9v"/>
+                                        </constraints>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="plus" catalog="system"/>
+                                        <connections>
+                                            <action selector="addUserButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0i1-fX-vTf"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="e1R-sA-vyl" secondAttribute="trailing" constant="30" id="FQk-KU-nOG"/>
+                                    <constraint firstItem="e1R-sA-vyl" firstAttribute="centerY" secondItem="EHi-XM-gxe" secondAttribute="centerY" id="k07-gc-c66"/>
+                                    <constraint firstAttribute="height" constant="65" id="tab-53-QmD"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MA5-n5-ZpF">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SOO-mb-BOW">
+                                        <rect key="frame" x="20" y="248" width="374" height="400"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="3vt-Nb-cBh">
+                                                <rect key="frame" x="20" y="55" width="334" height="85"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1F4-O5-C86">
+                                                        <rect key="frame" x="0.0" y="0.0" width="334" height="34"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v9Y-lq-xDd">
+                                                        <rect key="frame" x="0.0" y="51" width="334" height="34"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="1F4-O5-C86" secondAttribute="trailing" id="cH8-xr-zVn"/>
+                                                    <constraint firstAttribute="trailing" secondItem="v9Y-lq-xDd" secondAttribute="trailing" id="nng-U7-Vf6"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="XYn-Cz-fA4">
+                                                <rect key="frame" x="79" y="180" width="216" height="87"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="42" translatesAutoresizingMaskIntoConstraints="NO" id="FOi-4U-Nwr">
+                                                        <rect key="frame" x="0.0" y="0.0" width="216" height="31"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="buN-fQ-sye">
+                                                                <rect key="frame" x="0.0" y="0.0" width="87" height="31"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="87" id="aJI-QG-Iog"/>
+                                                                    <constraint firstAttribute="height" constant="31" id="pmh-mW-yHK"/>
+                                                                </constraints>
+                                                                <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title=" Male" image="ic_unselect_radio">
+                                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                                </state>
+                                                                <state key="selected" title="Male" image="ic_select_radio"/>
+                                                                <connections>
+                                                                    <action selector="maleButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yga-HJ-w8D"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BrW-bO-BFJ">
+                                                                <rect key="frame" x="129" y="0.0" width="87" height="31"/>
+                                                                <inset key="titleEdgeInsets" minX="12" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="Female" image="ic_unselect_radio">
+                                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                                </state>
+                                                                <state key="selected" title="Female" image="ic_select_radio"/>
+                                                                <connections>
+                                                                    <action selector="femaleButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Igx-Qa-gCp"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="29" translatesAutoresizingMaskIntoConstraints="NO" id="T71-4H-tle">
+                                                        <rect key="frame" x="0.0" y="56" width="216" height="31"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="smE-WR-aiz">
+                                                                <rect key="frame" x="0.0" y="0.0" width="93.5" height="31"/>
+                                                                <inset key="titleEdgeInsets" minX="12" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="active" image="ic_unselect_radio">
+                                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                                </state>
+                                                                <state key="selected" title="active" image="ic_select_radio"/>
+                                                                <connections>
+                                                                    <action selector="activeButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EAi-2b-MmV"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T1a-fH-hDC">
+                                                                <rect key="frame" x="122.5" y="0.0" width="93.5" height="31"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="31" id="qVx-LP-fyD"/>
+                                                                </constraints>
+                                                                <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title=" inactive" image="ic_unselect_radio">
+                                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                                </state>
+                                                                <state key="selected" title="inactive" image="ic_select_radio"/>
+                                                                <connections>
+                                                                    <action selector="inactiveButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7r9-qk-EeZ"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ObW-QF-xVR">
+                                                <rect key="frame" x="149.5" y="312" width="75" height="31"/>
+                                                <color key="backgroundColor" systemColor="labelColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="75" id="DC6-wH-Rsj"/>
+                                                    <constraint firstAttribute="height" constant="31" id="xGj-iI-LzB"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Done"/>
+                                                <connections>
+                                                    <action selector="doneWithButtonTap_:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dul-Dx-A8C"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="3vt-Nb-cBh" firstAttribute="top" secondItem="SOO-mb-BOW" secondAttribute="top" constant="55" id="0X7-gD-E1R"/>
+                                            <constraint firstItem="3vt-Nb-cBh" firstAttribute="leading" secondItem="SOO-mb-BOW" secondAttribute="leading" constant="20" id="JOe-dL-bBo"/>
+                                            <constraint firstAttribute="height" constant="400" id="LFh-Z8-6lA"/>
+                                            <constraint firstItem="ObW-QF-xVR" firstAttribute="centerX" secondItem="SOO-mb-BOW" secondAttribute="centerX" id="Njy-r5-tBg"/>
+                                            <constraint firstItem="XYn-Cz-fA4" firstAttribute="centerX" secondItem="SOO-mb-BOW" secondAttribute="centerX" id="Vfb-m7-xs8"/>
+                                            <constraint firstItem="XYn-Cz-fA4" firstAttribute="top" secondItem="3vt-Nb-cBh" secondAttribute="bottom" constant="40" id="Zwi-Gy-msA"/>
+                                            <constraint firstItem="ObW-QF-xVR" firstAttribute="top" secondItem="XYn-Cz-fA4" secondAttribute="bottom" constant="45" id="ogw-FX-Hvm"/>
+                                            <constraint firstAttribute="trailing" secondItem="3vt-Nb-cBh" secondAttribute="trailing" constant="20" id="zt2-mC-zKk"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.50416211260865063" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="SOO-mb-BOW" firstAttribute="leading" secondItem="MA5-n5-ZpF" secondAttribute="leading" constant="20" symbolic="YES" id="McZ-Lk-zIR"/>
+                                    <constraint firstItem="SOO-mb-BOW" firstAttribute="centerY" secondItem="MA5-n5-ZpF" secondAttribute="centerY" id="iDx-tF-dAm"/>
+                                    <constraint firstItem="SOO-mb-BOW" firstAttribute="centerX" secondItem="MA5-n5-ZpF" secondAttribute="centerX" id="yfn-ja-kfm"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="MA5-n5-ZpF" secondAttribute="bottom" id="8uw-Zq-182"/>
+                            <constraint firstItem="e40-bi-b2R" firstAttribute="top" secondItem="EHi-XM-gxe" secondAttribute="bottom" id="A7d-Uq-6hE"/>
+                            <constraint firstAttribute="bottom" secondItem="e40-bi-b2R" secondAttribute="bottom" id="K22-3v-Scy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EHi-XM-gxe" secondAttribute="trailing" id="P4s-bH-jW0"/>
+                            <constraint firstItem="MA5-n5-ZpF" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ZDO-e8-vu0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="e40-bi-b2R" secondAttribute="trailing" id="csj-D8-bmV"/>
+                            <constraint firstItem="MA5-n5-ZpF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="jpd-RG-hOy"/>
+                            <constraint firstItem="e40-bi-b2R" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="sMV-Ur-hfN"/>
+                            <constraint firstItem="MA5-n5-ZpF" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="vAv-0Q-TOY"/>
+                            <constraint firstItem="EHi-XM-gxe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="y0M-vf-PkT"/>
+                            <constraint firstItem="EHi-XM-gxe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="zTc-sI-CCE"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="AddNewUserView" destination="SOO-mb-BOW" id="YCa-QP-XIM"/>
+                        <outlet property="activeButton" destination="smE-WR-aiz" id="Thf-7L-jw5"/>
+                        <outlet property="addUserButton" destination="e1R-sA-vyl" id="47N-Wu-dWH"/>
+                        <outlet property="doneButton" destination="ObW-QF-xVR" id="54t-Vm-pkA"/>
+                        <outlet property="emailTextField" destination="v9Y-lq-xDd" id="Luh-hV-Z9z"/>
+                        <outlet property="femaleButton" destination="BrW-bO-BFJ" id="ekm-DK-Iy8"/>
+                        <outlet property="inactiveButton" destination="T1a-fH-hDC" id="fUF-lF-1mM"/>
+                        <outlet property="maleButton" destination="buN-fQ-sye" id="8Cj-DM-1nb"/>
+                        <outlet property="nameTextField" destination="1F4-O5-C86" id="d5v-55-uhA"/>
+                        <outlet property="usersTableView" destination="e40-bi-b2R" id="DQU-0F-1dG"/>
+                        <outlet property="viewAddUser" destination="MA5-n5-ZpF" id="vvM-vc-sIo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28.985507246376812" y="83.705357142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_select_radio" width="16" height="16"/>
+        <image name="ic_unselect_radio" width="16" height="16"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
